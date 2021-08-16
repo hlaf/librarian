@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.1.0
+
+* Support Ruby 3
+
 ## 1.0.0
 
 * Require Ruby 2.4+
