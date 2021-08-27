@@ -25,8 +25,8 @@ module Librarian
         end
       end
 
-      def run(specfile = nil)
-        specfile = Proc.new if block_given?
+      def run(specfile = nil, &block)
+        specfile = block if block
 
         case specfile
         when Pathname
