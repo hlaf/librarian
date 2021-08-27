@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.1.1
+
+* Fix one more Ruby 3 compatibility issue
+* Search for the Rakefile relatively to pwd
+
 ## 1.1.0
 
 * Support Ruby 3
