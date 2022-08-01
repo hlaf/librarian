@@ -56,6 +56,10 @@ module Librarian
         @debug = true
       end
 
+      def debug?
+        @debug
+      end
+
       def debug_line_numbers!
         @debug_line_numbers = true
       end

@@ -44,25 +44,29 @@ module Librarian
         end
 
         def clone!(repository_url)
-          command = %W(clone #{repository_url} . --quiet)
+          command = %W(clone #{repository_url} .)
+          command << '--quiet' unless environment.ui.debug?
           run!(command, :chdir => true)
         end
 
         def checkout!(reference, options ={ })
-          command = %W(checkout #{reference} --quiet)
+          command = %W(checkout #{reference})
+          command << '--quiet' unless environment.ui.debug?
           command << "--force" if options[:force]
           run!(command, :chdir => true)
         end
 
         def fetch!(remote, options = { })
-          command = %W(fetch #{remote} --quiet)
+          command = %W(fetch #{remote})
+          command << '--quiet' unless environment.ui.debug?
           command << "--tags" if options[:tags]
           command << "--force" if options[:tags]
           run!(command, :chdir => true)
         end
 
         def reset_hard!
-          command = %W(reset --hard --quiet)
+          command = %W(reset --hard)
+          command << '--quiet' unless environment.ui.debug?
           run!(command, :chdir => true)
         end
 
@@ -108,12 +112,14 @@ module Librarian
             reference = "#{remote}/#{reference}"
           end
 
-          command = %W(rev-parse #{reference}^{commit} --quiet)
+          command = %W(rev-parse #{reference}^{commit})
+          command << '--quiet' unless environment.ui.debug?
           run!(command, :chdir => true).strip
         end
 
         def current_commit_hash
-          command = %W(rev-parse HEAD --quiet)
+          command = %W(rev-parse HEAD)
+          command << '--quiet' unless environment.ui.debug?
           run!(command, :chdir => true).strip!
         end
 
