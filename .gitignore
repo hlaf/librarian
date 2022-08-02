@@ -3,4 +3,5 @@
 pkg/*
 tmp
 vendor
+.vendor
 Gemfile.lock
