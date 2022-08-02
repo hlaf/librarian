@@ -155,7 +155,7 @@ module Librarian
           repository.fetch! remote
           repository.fetch! remote,
                             :tags => true,
-                            :force => environment.config_db['allow_moving_tags']
+                            :force => environment.config_db['allow-moving-tags']
         end
       end
 
