@@ -1,5 +1,10 @@
-Librarian [![Build Status](https://secure.travis-ci.org/voxpupuli/librarian.png)](https://travis-ci.org/voxpupuli/librarian)
-=========
+# Librarian
+
+[![License](https://img.shields.io/github/license/voxpupuli/librarian.svg)](https://github.com/voxpupuli/librarian/blob/master/LICENSE.txt)
+[![Test](https://github.com/voxpupuli/librarian/actions/workflows/test.yml/badge.svg)](https://github.com/voxpupuli/librarian/actions/workflows/test.yml)
+[![Release](https://github.com/voxpupuli/librarian/actions/workflows/release.yml/badge.svg)](https://github.com/voxpupuli/librarian/actions/workflows/release.yml)
+[![RubyGem Version](https://img.shields.io/gem/v/librarian.svg)](https://rubygems.org/gems/librarian)
+[![RubyGem Downloads](https://img.shields.io/gem/dt/librarian.svg)](https://rubygems.org/gems/librarian)
 
 This is a forked version published as `librarianp` with improvements in order to support `librarian-puppet`.
 
